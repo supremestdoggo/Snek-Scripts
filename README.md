@@ -16,7 +16,7 @@ The cryptography module is a module with tools for cryptography, such as ciphers
 - While the original fracarith, encoder, and strlist libraries were created by me, The Snek Scripts' aim is to be a community project. The contributions of others will be listed in the Contributions section.
 ## Tasks
 - [x] Add cryptography module
-- [ ] Make Snek Scripts GitHub repo
+- [x] Make Snek Scripts GitHub repo
 ## Contributions
 #### AoPS:
 - @RWhite: Suggestion to change `stringtoint()` to `stoi()` and `inttostring()` to `itos()`, suggestion to change encoder and strlist to compress their functions.
