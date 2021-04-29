@@ -1,4 +1,4 @@
-from encoder import stoi, itos
+from encoder import *
 
 def decode(intlist):
   return [itos(int(x)) for x in intlist.split(",")]
