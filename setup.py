@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="snek-scripts-supremestdoggo",
-    version="0.1.3",
+    version="0.1.3c",
     author="",
     author_email="",
     description="A set of useful Python functions",

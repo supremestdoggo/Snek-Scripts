@@ -4,7 +4,7 @@ def ceasar_encode(string,shift):
   newstring = ''
   for x in list(string.lower()):
     if x != ' ':
-      newstring = newstring + (alphabet.index(x) + shift) % 25
+      newstring = newstring + alphabet[(alphabet.index(x) + shift) % 25]
     else:
       newstring = newstring + x
   return newstring
@@ -13,27 +13,26 @@ def ceasar_decode(string,shift):
   newstring = ''
   for x in list(string.lower()):
     if x != ' ':
-      newstring = newstring + (alphabet.index(x) + (25-shift)) % 25
+      newstring = newstring + alphabet[(alphabet.index(x) + (25-shift)) % 25]
     else:
       newstring = newstring + x
   return newstring
 
-def ma_encode(string,c_alphabet):
-  cipher_alphabet = list(c_alphabet.lower())
+def ma_encode(string,cipher_alphabet):
+  c_alphabet = list(cipher_alphabet.lower())
   new_string = ''
   for x in list(string.lower()):
     if x != ' ':
-      new_string = new_string + cipher_alphabet[alphabet.index(x)]
+      new_string = new_string + c_alphabet[alphabet.index(x)]
     else:
       new_string = new_string + x
   return new_string
 
-def ma_decode(string,c_alphabet):
-  cipher_alphabet = list(alphabet.lower())
+def ma_decode(string,cipher_alphabet):
   new_string = ''
   for x in list(string.lower()):
     if x != ' ':
-      new_string = new_string + alphabet(cipher_alphabet.index(x))
+      new_string = new_string + alphabet[list(cipher_alphabet.lower()).index(x)]
     else:
       new_string = new_string + x
   return new_string
