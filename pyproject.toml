@@ -1,19 +1,6 @@
-[tool.poetry]
-name = "snek_scripts"
-version = "0.1.3c"
-description = "A set of useful Python functions"
-authors = ["supremestdoggo <<>>"]
-readme = "README.md"
-license = "MIT"
-homepage = "https://github.com/supremestdoggo/snek_scripts"
-repository = "https://github.com/supremestdoggo/snek_scripts"
-include = [
-    "LICENSE",
-]
-
-[tool.poetry.dependencies]
-python = "^3.8"
-
 [build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
