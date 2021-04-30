@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "snek_scripts"
+name = "snek-scripts"
 version = "0.1.3c"
 description = "A set of useful Python functions"
 authors = ["supremestdoggo <<>>"]
