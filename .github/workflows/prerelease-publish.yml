@@ -24,6 +24,10 @@ jobs:
         include: "pyproject.toml"
         find: "snek-scripts"
         replace: "snek-scripts-beta"
+    - name: Build and publish to pypi
+      uses: JRubics/poetry-publish@v1.6
+      with:
+        pypi_token: ${{ secrets.PYPI_TOKEN }}
     - name: Undo package name change
       uses: jacobtomlinson/gha-find-replace@0.1.3
       with:
